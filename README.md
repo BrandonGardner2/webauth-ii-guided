@@ -1,6 +1,6 @@
 # Web Auth II Guided Project
 
-Guided project for **Web Auth II** Module.
+Guided project for **Web Auth II** Module..
 
 ## Prerequisites
 
