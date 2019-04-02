@@ -40,4 +40,18 @@ router.post("/login", (req, res) => {
     });
 });
 
+router.get("/logout", (req, res) => {
+  if (req.session) {
+    req.session.destroy(err => {
+      if (err) {
+        res.status(500).json(err);
+      } else {
+        res.status(200).json({ message: "Goodbye" });
+      }
+    });
+  } else {
+    res.status(200).json({ message: "Goodbye" });
+  }
+});
+
 module.exports = router;
